@@ -9,6 +9,15 @@ body {
 
 .jumbotron {
   background-color: #22252c;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  font-size: 60px;
+}
+
+.jumbotron h2 {
+  font-size: 25px;
 }
 
 #formOne {
@@ -28,6 +37,8 @@ body {
 }
 
 #output {
+  display: none;
+  background-color: rgb(65, 18, 18);
   border: 1px solid;
   padding: 20px;
 }

@@ -16,11 +16,10 @@ Pizza.prototype.calculateCost = function() {
   return cost;
 }
 
-let myPizza = new Pizza("large", ["pepperoni", "sausage", "bacon", "jalapenos"]);
-
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
+    $("#output").hide();
     let pizzaSize = $("input[name='pizzaSize']:checked").val();
     let toppingsSelected = []
     $("input[name='topping']:checked").each(function() {
@@ -31,5 +30,6 @@ $(document).ready(function() {
     $("#size").text(pizzaSize);
     $("#toppings").text(toppingsSelected.join(" "));
     $("#cost").text(newPizza.calculateCost());
+    $("#output").fadeIn(1200);
   });
 });
