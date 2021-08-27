@@ -9,9 +9,12 @@ function Pizza (size, toppings) {
 
 Pizza.prototype.calculateCost = function() {
   let cost = 0.0;
-
   cost += availableSizes[this.size];
+  this.toppings.forEach(function(element) {
+    cost += availableToppings[element];
+  });
   return cost;
 }
 
-let myPizza = new Pizza("small", "pepperoni");
+let myPizza = new Pizza("large", ["pepperoni", "sausage", "bacon", "jalapenos"]);
+
