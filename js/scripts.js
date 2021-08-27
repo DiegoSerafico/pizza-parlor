@@ -26,6 +26,10 @@ $(document).ready(function() {
     $("input[name='topping']:checked").each(function() {
       toppingsSelected.push($(this).val());
     });
-    console.log(toppingsSelected);
+    let newPizza = new Pizza(pizzaSize, toppingsSelected)
+    ;
+    $("#size").text(pizzaSize);
+    $("#toppings").text(toppingsSelected.join(" "));
+    $("#cost").text(newPizza.calculateCost());
   });
 });
