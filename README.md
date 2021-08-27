@@ -25,7 +25,6 @@ _In this page you enter the size of pizza and the toppings you want and get a pr
 
 ## Known Bugs
 
-* _If not toppings selected the output displays nothing on toppings field_
 * _Styling not finished_
 * _Can't order more than one pizza_
 * _No delivery option yet_

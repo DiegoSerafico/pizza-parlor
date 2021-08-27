@@ -28,7 +28,11 @@ $(document).ready(function() {
     let newPizza = new Pizza(pizzaSize, toppingsSelected)
     ;
     $("#size").text(pizzaSize);
-    $("#toppings").text(toppingsSelected.join(" "));
+    if (toppingsSelected.length == 0) {
+      $("#toppings").text("Plain")
+    } else {
+      $("#toppings").text(toppingsSelected.join(" "));
+    }
     $("#cost").text(newPizza.calculateCost());
     $("#output").fadeIn(1200);
   });
