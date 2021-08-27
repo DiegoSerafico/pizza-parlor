@@ -22,6 +22,10 @@ $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
     let pizzaSize = $("input[name='pizzaSize']:checked").val();
-    console.log(pizzaSize);
+    let toppingsSelected = []
+    $("input[name='topping']:checked").each(function() {
+      toppingsSelected.push($(this).val());
+    });
+    console.log(toppingsSelected);
   });
 });
