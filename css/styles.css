@@ -1,0 +1,33 @@
+body {
+  background-color: azure;
+  color: azure;
+}
+
+.container {
+  background-color: #3f3250;
+}
+
+.jumbotron {
+  background-color: #22252c;
+}
+
+#formOne {
+  background-color: #373737;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid;
+}
+
+.btn {
+  background-color: azure;
+}
+
+.btn:hover {
+  background-color: black;
+  color: azure;
+}
+
+#output {
+  border: 1px solid;
+  padding: 20px;
+}
