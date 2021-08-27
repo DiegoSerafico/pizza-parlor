@@ -18,3 +18,10 @@ Pizza.prototype.calculateCost = function() {
 
 let myPizza = new Pizza("large", ["pepperoni", "sausage", "bacon", "jalapenos"]);
 
+$(document).ready(function() {
+  $("#formOne").submit(function(event) {
+    event.preventDefault();
+    let pizzaSize = $("input[name='pizzaSize']:checked").val();
+    console.log(pizzaSize);
+  });
+});
